@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,rgb(19, 248, 248),coral);
+    color: rgb(255, 255, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    background: rgba(255, 255, 255, 0.144);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 70%;
+    min-width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#search-form input {
+    background-color: rgb(232, 250, 250);
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.9rem;
+    width: 60%;
+    outline: none;
+    font-size: 1rem;
+}
+
+#search-form button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.9rem;
+    background-color: rgb(232, 250, 250);
+    color: #008cff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-form input:focus{
+    border: solid 2px rgb(122, 132, 218);
+     box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
+}
+
+#search-form button:hover {
+  background-color: rgb(46, 65, 240);
+  color: rgb(255, 255, 245);
+}
+
+.weather-info {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.city-name {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.details {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  opacity: 0.8;
+}
